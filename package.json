@@ -1,0 +1,41 @@
+{
+  "name": "fastify-rest-api",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with Fastify-CLI.",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tap \"test/**/*.test.js\"",
+    "start": "fastify start -l info app.js",
+    "dev": "fastify start -w -l info -P app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hexlet-components/fastify-rest-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hexlet-components/fastify-rest-api/issues"
+  },
+  "homepage": "https://github.com/hexlet-components/fastify-rest-api#readme",
+  "dependencies": {
+    "@fastify/autoload": "*",
+    "@fastify/sensible": "*",
+    "fastify": "^4.0.0-rc.2",
+    "fastify-cli": "^3.1.0",
+    "fastify-plugin": "*"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-jest": "^26.2.2",
+    "jest": "^28.1.0",
+    "npm-check-updates": "^13.0.1",
+    "tap": "^16.2.0"
+  }
+}
