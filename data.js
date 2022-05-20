@@ -3,6 +3,8 @@ import { faker } from '@faker-js/faker';
 export const user = () => {
   const obj = {
     name: faker.name.findName(),
+    email: faker.internet.email(),
+    phone: faker.phone.phoneNumber(),
   };
 
   return obj;
