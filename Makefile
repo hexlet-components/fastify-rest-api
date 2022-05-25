@@ -1,3 +1,7 @@
+setup:
+	npm install
+	npx simple-git-hooks
+
 dev:
 	npm run dev
 
