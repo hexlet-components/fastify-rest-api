@@ -2,7 +2,7 @@
 
 import { user, collection } from '../../data.js';
 
-export default async (fastify, _opts) => {
+export default async (fastify) => {
   fastify.addSchema({
     $id: 'user',
     type: 'object',
@@ -36,6 +36,7 @@ export default async (fastify, _opts) => {
   };
 
   fastify.get('/users/:id', { schema: schemaShow }, async (request) => {
+    // eslint-disable-next-line no-unused-vars
     const { id } = request.params;
     return user();
   });

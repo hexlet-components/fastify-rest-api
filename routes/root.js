@@ -1,5 +1,5 @@
 // @ts-check
 
-export default async (fastify, opts) => {
-  fastify.get('/', async (request, reply) => ({ root: true }));
+export default async (fastify) => {
+  fastify.get('/', async () => ({ root: true }));
 };
