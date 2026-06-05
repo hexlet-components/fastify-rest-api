@@ -11,6 +11,8 @@ export const user = () => {
 };
 
 export const collection = (fn, times = 3) => {
-  const result = Array(times).fill(0).map(() => fn());
+  const result = Array(times)
+    .fill(0)
+    .map(() => fn());
   return result;
 };

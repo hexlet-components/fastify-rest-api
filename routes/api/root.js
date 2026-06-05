@@ -1,6 +1,6 @@
 // @ts-check
 
-import { user, collection } from '../../data.js';
+import { collection, user } from '../../data.js';
 
 export default async (fastify) => {
   fastify.addSchema({
@@ -35,11 +35,7 @@ export default async (fastify) => {
     },
   };
 
-  fastify.get('/users/:id', { schema: schemaShow }, async (request) => {
-    // eslint-disable-next-line no-unused-vars
-    const { id } = request.params;
-    return user();
-  });
+  fastify.get('/users/:id', { schema: schemaShow }, async () => user());
 
   // fastify.get('/users/:id', async (request, reply) => ({ root: true }));
   // fastify.post('/users/:id', async (request, reply) => ({ root: true }));

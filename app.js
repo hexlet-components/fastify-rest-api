@@ -1,7 +1,7 @@
 // @ts-check
 
-import { fileURLToPath } from 'url';
-import path from 'path';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import AutoLoad from '@fastify/autoload';
 
 const __dirname = fileURLToPath(path.dirname(import.meta.url));

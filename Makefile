@@ -9,9 +9,9 @@ routes:
 	npx fastify print-routes app.js
 
 lint:
-	npx eslint .
+	npx biome check .
 
 lint-fix:
-	npx eslint . --fix
+	npx biome check --write .
 
 .PHONY: routes
