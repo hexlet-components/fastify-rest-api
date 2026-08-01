@@ -28,21 +28,21 @@
   },
   "homepage": "https://github.com/hexlet-components/fastify-rest-api#readme",
   "dependencies": {
-    "@faker-js/faker": "^10.4.0",
-    "@fastify/autoload": "^6.3.1",
+    "@faker-js/faker": "^10.5.0",
+    "@fastify/autoload": "^6.5.0",
     "@fastify/sensible": "^6.0.4",
-    "fastify": "^5.8.5",
+    "fastify": "^5.10.0",
     "fastify-cli": "^8.0.0",
-    "fastify-plugin": "^5.1.0"
+    "fastify-plugin": "^6.0.0"
   },
   "engines": {
     "node": ">=26.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.2.4",
+    "@biomejs/biome": "^2.5.6",
     "fastify-swagger": "^5.2.0",
-    "npm-check-updates": "^22.2.1",
+    "npm-check-updates": "^23.0.0",
     "simple-git-hooks": "^2.13.1",
-    "vitest": "^4.0.15"
+    "vitest": "^4.1.10"
   }
 }
