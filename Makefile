@@ -17,5 +17,8 @@ lint-fix:
 
 .PHONY: routes
 
+install:
+	pnpm install
+
 test:
 	pnpm --silent test
