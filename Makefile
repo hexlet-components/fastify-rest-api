@@ -1,17 +1,21 @@
 setup:
-	npm install
-	npx simple-git-hooks
+	pnpm install
+	pnpm exec simple-git-hooks
 
 dev:
-	npm run dev
+	pnpm run dev
 
 routes:
-	npx fastify print-routes app.js
+	pnpm exec fastify print-routes app.js
 
 lint:
-	npx biome check .
+	pnpm --silent run lint
+	pnpm --silent run format:check
 
 lint-fix:
-	npx biome check --write .
+	pnpm --silent run lint:fix
 
 .PHONY: routes
+
+test:
+	pnpm --silent test
