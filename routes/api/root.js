@@ -1,28 +1,28 @@
 // @ts-check
 
-import { collection, user } from '../../data.js';
+import { collection, user } from "../../data.js";
 
 export default async (fastify) => {
   fastify.addSchema({
-    $id: 'user',
-    type: 'object',
+    $id: "user",
+    type: "object",
     properties: {
-      email: { type: 'string' },
-      phone: { type: 'string' },
-      name: { type: 'string' },
+      email: { type: "string" },
+      phone: { type: "string" },
+      name: { type: "string" },
     },
   });
 
   const schemaIndex = {
     response: {
       200: {
-        type: 'array',
-        items: { $ref: 'user#' },
+        type: "array",
+        items: { $ref: "user#" },
       },
     },
   };
 
-  fastify.get('/users', { schemaIndex }, async () => {
+  fastify.get("/users", { schemaIndex }, async () => {
     const users = collection(user, 10);
     return users;
   });
@@ -30,12 +30,12 @@ export default async (fastify) => {
   const schemaShow = {
     response: {
       200: {
-        $ref: 'user#',
+        $ref: "user#",
       },
     },
   };
 
-  fastify.get('/users/:id', { schema: schemaShow }, async () => user());
+  fastify.get("/users/:id", { schema: schemaShow }, async () => user());
 
   // fastify.get('/users/:id', async (request, reply) => ({ root: true }));
   // fastify.post('/users/:id', async (request, reply) => ({ root: true }));
