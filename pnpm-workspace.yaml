@@ -11,4 +11,3 @@
 # и дописывание сверху даёт дубль ключа, на котором YAML перестаёт разбираться.
 allowBuilds:
   lefthook: false
-  simple-git-hooks: set this to true or false
