@@ -6,6 +6,6 @@ Files in this folder are typically defined through the [`fastify-plugin`](https:
 
 Check out:
 
-- [The hitchhiker's guide to plugins](https://www.fastify.io/docs/latest/Plugins-Guide/)
-- [Fastify decorators](https://www.fastify.io/docs/latest/Decorators/).
-- [Fastify lifecycle](https://www.fastify.io/docs/latest/Lifecycle/).
+- [The hitchhiker's guide to plugins](https://fastify.dev/docs/latest/Guides/Plugins-Guide/)
+- [Fastify decorators](https://fastify.dev/docs/latest/Reference/Decorators/).
+- [Fastify lifecycle](https://fastify.dev/docs/latest/Reference/Lifecycle/).
